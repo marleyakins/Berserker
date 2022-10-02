@@ -1,0 +1,4 @@
+token = ""
+extensions = ["listener"]
+banned = ["nigger", "nigga"]
+DEFAULT_PREFIX = "/"

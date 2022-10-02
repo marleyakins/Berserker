@@ -1,0 +1,2 @@
+class ConfigObject(object):
+    pass

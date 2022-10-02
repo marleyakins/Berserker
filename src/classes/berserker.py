@@ -21,7 +21,7 @@ def add_guild_to_db(guild_id: str, bot):
     """Adds a guild to the guilds database
     Parameters:
        guild_id: str - The guild you would like to check
-       bot: Isaiah - The bot itself
+       bot: Berserker - The bot itself
     """
     bot.db['guilds'][str(guild.id)] = {}
     bot.db['guilds'][str(guild.id)]['cases'] = {}
@@ -35,7 +35,7 @@ def database_check(guild_id: str, bot):
     """Checks if a guild is registered for the guild's database.
     Parameters:
        guild_id: str - The guild you would like to check
-       bot: Isaiah - The bot itself
+       bot: Berserker - The bot itself
     """
     func_check(
         str(guild.id) not in bot.db["guilds"], add_guild_to_db, guild_id, bot
@@ -156,7 +156,7 @@ class Berserker(commands.AutoShardedBot):
         return _return
 
     def dump(self, db: str):
-        """Dumps a given database table from the Isaiah.db property.
+        """Dumps a given database table from the Berserker.db property.
         
         Parameters:
             db: str - The database to be dumped.
